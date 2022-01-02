@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #281922;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  position: relative;
+}
+.app-title{
+  display: inline-block;
+  color: #FF14BD;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 500;
+  width: 595px;
+  height: 72px;
+  background-color: #281922;
+  border-radius: 50px;
+  user-select: none;
+  border: 2px solid #FF14BD;
+  text-shadow:0 0 4px hsl(0 0% 100% / 0.7), 0 0 8px #FF14BD;
+  box-shadow: inset 0 0 8px 0 #FF14BD,  0 0 10px 0 #FF14BD;
+}
+.form-field{
+  position: relative;
+}
+.form-input{
+  padding: 20px 40px;
+  width: 515px;
+  height: 32px;
+  border: 2px solid #FF14BD;
+  margin-left: 70px;
+  border-radius: 50px;
+  background-color: #281922;
+  font-size: 30px;
+  transition: 0.25s ease;
+  position: relative;
+  left: -35px;
+  text-align: center;
+  color: #FF14BD;
+  box-shadow: inset 0 0 8px 0 #FF14BD,  0 0 10px 0 #FF14BD;
 }
 
-.App-link {
-  color: #61dafb;
+
+.form-input:focus{
+  border-color: #FF14BD;
+  color: #FF14BD;
+}
+.form-label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 180px;
+  color: #FF14BD;
+  font-size: 35px;
+  user-select: none;
+  pointer-events: none;
+  transition: 0.5s ease;
+  text-shadow:0 0 4px hsl(0 0% 100% / 0.7), 0 0 8px #FF14BD;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label{
+  top: -5px;
+  display: inline-block;
+  background-color: rgba(40,25,34,1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.neon-button{
+  width: 599px;
+  height: 76px;
+  background-color: #281922;
+  margin-top: 45px;
+  border-radius: 50px;
+  color: #FF14BD;
+  font-size: 35px;
+  border: none;
+  border: 2px solid #FF14BD;
+  text-shadow:0 0 4px hsl(0 0% 100% / 0.7), 0px 0px 8px #FF14BD;
+  transition: 0.5s ease;
+  box-shadow: inset 0 0 8px 0 #FF14BD,  0 0 10px 0 #FF14BD;
+  position: relative;
+}
+
+.neon-button::before{
+  content: "";
+  position: absolute;
+  background:#FF14BD;
+  width: 599px;
+  height: 160px;
+  top: 120%;
+  left: 0px;
+
+  transform: perspective(180px) rotateX(10deg) scale(1,0.35);
+  filter: blur(50px);
+}
+.neon-button:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+  opacity: 0.8;
+}
+.my-love{
+  margin: 0;
+  background-color: #281922;
+  position: relative;
+}
+.my-love-title{
+  display: inline-block;
+  margin: 10px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  color: #ff14bd;
+  font-size:40px;
+}
+.my-love-title-wrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-love-title-img{
+  width: 400px;
+  transition: 0.5s ease;
+}
+.my-love-title-img:hover{
+  transform: scale(1.3);
+}
+.my-love-title-con{
+  display:flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.my-love-title-music{
+  width: 400px;
+  height: 100px;
+}
+.my-love-body-wrap{
+  margin-top:20px;
+  display: flex;
+  justify-content: space-around;
+}
+.body-title-wrap{
+  width: 35%;
+  color: #FF14BD;
+  transition: 0.5s ease;
+  user-select: none;
+}
+.body-title-wrap:hover{
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+.body-title-img{
+  width: 300px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+.body-title-img:hover{
+  transform: scale(1.3);
+}
+.body-title-header{
+  display: inline-block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 50px;
+  font-size: 50px;
+}
+.body-title-main{
+  font-size: 24px;
+}
+
+.my-love-footer-wrap{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-title-img{
+  width: 380px;
+  transition: 0.5s ease;
+}
+.footer-title-img:hover{
+  transform: scale(1.3);
+}
+.footer-title-wrap{
+  width: 20%;
+  color:#FF14BD;
+  transition: 0.5s ease;
+  user-select: none;
+}
+.footer-title-wrap:hover{
+  transform: translateY(-20px);
+}
+.footer-title-header{
+  display: inline-block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  line-height: 50px;
+  font-size: 50px;
+}
+.footer-title-main{
+  font-size: 24px;
 }

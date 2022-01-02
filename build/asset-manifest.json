@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.33405c12.css",
+    "main.js": "/static/js/main.9c47881c.js",
+    "static/js/787.d408015f.chunk.js": "/static/js/787.d408015f.chunk.js",
+    "static/media/music.mp3": "/static/media/music.9a3acb431707a035c11c.mp3",
+    "static/media/couple2.jpg": "/static/media/couple2.df3b20620da1fc91b6a3.jpg",
+    "static/media/couple1.jpg": "/static/media/couple1.6d410a600817d240c940.jpg",
+    "static/media/couple3.jpg": "/static/media/couple3.b1fc20084d96d97dd7f9.jpg",
+    "static/media/My-love1.jpg": "/static/media/My-love1.d0bf1447ed0fbc290b2f.jpg",
+    "static/media/couple.jpg": "/static/media/couple.d790644092753187dc90.jpg",
+    "static/media/couple0.jpg": "/static/media/couple0.37d918f62a72bd52c120.jpg",
+    "static/media/My-love3.jpg": "/static/media/My-love3.e89fadea218840fc8807.jpg",
+    "static/media/My-love2.jpg": "/static/media/My-love2.6fb3e307287d85d83daa.jpg",
+    "index.html": "/index.html",
+    "main.33405c12.css.map": "/static/css/main.33405c12.css.map",
+    "main.9c47881c.js.map": "/static/js/main.9c47881c.js.map",
+    "787.d408015f.chunk.js.map": "/static/js/787.d408015f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33405c12.css",
+    "static/js/main.9c47881c.js"
+  ]
+}
